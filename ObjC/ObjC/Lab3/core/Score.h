@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Score
+@interface Score : NSObject
+
+    @property (nonatomic) NSInteger rightCount;
+    @property (nonatomic) NSInteger wrongCount;
+    @property (nonatomic) float percentage;
 
 @end

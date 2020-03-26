@@ -6,4 +6,17 @@
 //  Copyright © 2020 Daniel. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Score.h"
+
+@implementation Score
+
+- (instancetype) init{
+    if (self = [super init]){
+        self.rightCount = 0;
+        self.wrongCount = 0;
+        self.percentage = 0;
+    }
+    return self;
+}
+
+@end
