@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F6C1A21242D50B30065ACDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6C1A20242D50B30065ACDF /* main.m */; };
+		4F6C1A28242D52250065ACDF /* Lab1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6C1A27242D52250065ACDF /* Lab1.m */; };
+		4F6C1A2C242D560F0065ACDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6C1A2B242D560F0065ACDF /* main.m */; };
+		4F6C1A2E242D567D0065ACDF /* Lab2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6C1A2D242D567D0065ACDF /* Lab2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,10 @@
 
 /* Begin PBXFileReference section */
 		4F6C1A1D242D50B30065ACDF /* ObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjC; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F6C1A20242D50B30065ACDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F6C1A27242D52250065ACDF /* Lab1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lab1.m; sourceTree = "<group>"; };
+		4F6C1A2B242D560F0065ACDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F6C1A2D242D567D0065ACDF /* Lab2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lab2.m; sourceTree = "<group>"; };
+		4F6C1A2F242D56940065ACDF /* Lab2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lab2.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +62,36 @@
 		4F6C1A1F242D50B30065ACDF /* ObjC */ = {
 			isa = PBXGroup;
 			children = (
-				4F6C1A20242D50B30065ACDF /* main.m */,
+				4F6C1A32242D58ED0065ACDF /* Lab3 */,
+				4F6C1A31242D58360065ACDF /* Lab1 */,
+				4F6C1A30242D58280065ACDF /* Lab2 */,
 			);
 			path = ObjC;
+			sourceTree = "<group>";
+		};
+		4F6C1A30242D58280065ACDF /* Lab2 */ = {
+			isa = PBXGroup;
+			children = (
+				4F6C1A2D242D567D0065ACDF /* Lab2.m */,
+				4F6C1A2B242D560F0065ACDF /* main.m */,
+				4F6C1A2F242D56940065ACDF /* Lab2.h */,
+			);
+			path = Lab2;
+			sourceTree = "<group>";
+		};
+		4F6C1A31242D58360065ACDF /* Lab1 */ = {
+			isa = PBXGroup;
+			children = (
+				4F6C1A27242D52250065ACDF /* Lab1.m */,
+			);
+			path = Lab1;
+			sourceTree = "<group>";
+		};
+		4F6C1A32242D58ED0065ACDF /* Lab3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lab3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F6C1A21242D50B30065ACDF /* main.m in Sources */,
+				4F6C1A2E242D567D0065ACDF /* Lab2.m in Sources */,
+				4F6C1A2C242D560F0065ACDF /* main.m in Sources */,
+				4F6C1A28242D52250065ACDF /* Lab1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
