@@ -18,7 +18,7 @@ NSString *getUserInput(int maxLength, NSString *prompt) {
   if (result != NULL) {
     // turn cstring -> NSString
     // NSString.stringWithUTF8String(inputchars)
-    //         .stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet());
+	//.str				ingByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet());
     return [[NSString stringWithUTF8String: inputChars] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
   }
   return NULL;
