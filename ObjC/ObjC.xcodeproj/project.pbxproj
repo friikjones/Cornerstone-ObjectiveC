@@ -60,19 +60,19 @@
 		4F6C1A1F242D50B30065ACDF /* ObjC */ = {
 			isa = PBXGroup;
 			children = (
-				4FCE0EB5242EA987007DD0DC /* Lab4 */,
+				4FCE0EB5242EA987007DD0DC /* Lab13 */,
 			);
 			path = ObjC;
 			sourceTree = "<group>";
 		};
-		4FCE0EB5242EA987007DD0DC /* Lab4 */ = {
+		4FCE0EB5242EA987007DD0DC /* Lab13 */ = {
 			isa = PBXGroup;
 			children = (
 				4FCE0EB6242EA9A9007DD0DC /* main.m */,
 				4FCE0EB8242EAFA3007DD0DC /* PigLatinization.m */,
 				4FCE0EBA242EAFC3007DD0DC /* PigLatilization.h */,
 			);
-			path = Lab4;
+			path = Lab13;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
