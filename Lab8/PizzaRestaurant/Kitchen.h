@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Pizza.h"
 
 @interface Kitchen : NSObject
 

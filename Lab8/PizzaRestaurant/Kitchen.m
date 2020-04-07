@@ -7,7 +7,6 @@
 //
 
 #import "Kitchen.h"
-#import "Pizza.h"
 
 @implementation Kitchen
 

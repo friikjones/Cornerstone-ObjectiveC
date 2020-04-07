@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "Kitchen.h"
+#import "Pizza.h"
 
 int main(int argc, const char * argv[])
 {
@@ -21,22 +22,41 @@ int main(int argc, const char * argv[])
         
         while (TRUE) {
             // Loop forever
-            
             NSLog(@"> ");
             char str[100];
             fgets (str, 100, stdin);
-            
+            //Getting commands
             NSString *inputString = [[NSString alloc] initWithUTF8String:str];
             inputString = [inputString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
             
-            NSLog(@"Input was %@", inputString);
+            //Parsing to commandWords and mutableCommands
+            NSMutableArray *mutableCommands = [inputString componentsSeparatedByString:@" "];
             
-            // Take the first word of the command as the size, and the rest as the toppings
-            NSArray *commandWords = [inputString componentsSeparatedByString:@" "];
+            //Getting first command and removing case sensitivity
+            NSString *firstCommand = [mutableCommands firstObject];
+            [mutableCommands removeObjectAtIndex:0];
+            firstCommand = [firstCommand lowercaseString];
             
-            // And then send some message to the kitchen...
+            //initializing size with default value and getting firstCommand
+            PizzaSize size = large;
+            NSString *sizeName = @"large";
+            if([firstCommand isEqualToString: @"small"]){
+                sizeName = @"small";
+                size = small;
+            }else if ([firstCommand isEqualToString:@"medium"]){
+                sizeName = @"medium";
+                size  = medium;
+            }
+            
+            Pizza* newPizza = [restaurantKitchen makePizzaWithSize:size toppings:mutableCommands];
+            if(newPizza){
+                NSLog(@"Pizza created sucessfully");
+                NSLog(@"Size %@", sizeName);
+                NSLog(@"Toppings %@", mutableCommands);
+            }else {
+                NSLog(@"No Pizza was created");
+            }
         }
-
     }
     return 0;
 }
